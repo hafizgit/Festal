@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="app.dori.festal.activity.RegisterActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/festal_logo"
+        android:layout_gravity="center"
+        android:id="@+id/festalLogo"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User name"
+                android:maxLines="1"
+                android:id="@+id/activity_register_username"
+                android:layout_marginBottom="8dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:maxLines="1"
+                android:id="@+id/activity_register_email"
+                android:layout_marginBottom="8dp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/activity_register_username"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:maxLines="1"
+                android:id="@+id/activity_register_password"
+                android:layout_marginBottom="8dp"
+                android:inputType="textPassword"
+                android:layout_below="@+id/activity_register_email"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Register"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/log_in_button"
+                android:layout_below="@+id/activity_register_password"
+                android:id="@+id/activity_register_register_btn"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateOnly="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@+id/activity_register_register_btn"
+                android:layout_alignBottom="@+id/activity_register_register_btn"
+                android:id="@+id/activity_register_progressbar"/>
+
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>
